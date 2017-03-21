@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/jaxen-1.1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.aop-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.asm-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.aspects-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.beans-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.context.support-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.context-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.core-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.expression-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.instrument.tomcat-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.instrument-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.jdbc-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.jms-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.orm-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.oxm-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.test-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.transaction-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.web.portlet-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.web.servlet-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.web.struts-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/org.springframework.web-3.1.0.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/serializer-2.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/xalan-2.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/xercesImpl.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/xml-apis.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/jdom-2.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/尚学堂马士兵_设计模式/Strust/005_Factory_Series_DesignPattern/src/Factory/lib/jdom.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
