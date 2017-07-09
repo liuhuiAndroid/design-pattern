@@ -11,6 +11,10 @@ import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import javax.tools.JavaCompiler.CompilationTask;
 
+/**
+ * 将接口传进来 完成实现任意接口的动态代理
+ *
+ */
 public class Proxy {
 	
 	public static Object newProxyInstance(Class infce, InvocationHandler h) throws Exception { //JDK6 Complier API, CGLib, ASM

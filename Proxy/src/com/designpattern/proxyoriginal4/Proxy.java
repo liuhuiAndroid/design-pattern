@@ -1,33 +1,45 @@
-package com.designpattern.compiler.test;
+package com.designpattern.proxyoriginal4;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
 
 import javax.tools.JavaCompiler;
-import javax.tools.JavaCompiler.CompilationTask;
 import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
+import javax.tools.JavaCompiler.CompilationTask;
 
-import com.designpattern.proxyoriginal3.Moveable;
-import com.designpattern.proxyoriginal3.Tank;
+import com.designpattern.proxyoriginal4.Moveable;
+import com.designpattern.proxyoriginal4.Tank;
 
-public class Test {
+public class Proxy {
 
 	/**
-	 * 发现这段代码可以生成文件,即动态代理
-	 * 但是只能产生Moveable接口的代理，不能产生任意一个接口的代理，接下来增加接口参数看
-	 * @param args
-	 * @throws Exception
+	 * 现在可以随意地生成实现任意接口的代理
+	 * @return
+	 * @throws Exception 
 	 */
-	public static void main(String[] args) throws Exception {
+	public static Object newProxyInstance(Class infce) throws Exception{ //JDK1.6 Complier API,CGLib, ASM
 		String rt = "\r\n";
+		String methodStr = "";
+		Method[] methods = infce.getMethods();
+		for(Method m :methods){
+			methodStr += "@Override" + rt +
+						"public void "+m.getName() +"(){" + rt +
+							"long start = System.currentTimeMillis();"+ rt +
+							"t." + m.getName() + "();"+ rt +
+							"long end = System.currentTimeMillis();"+ rt +
+							"System.out.println(\"time:\"+(end - start));"+ rt +
+						"}";
+		}
+		
 		String src = 
-				"package com.designpattern.proxyoriginal3;"+ rt +
-				"public class TankTimeProxy implements Moveable{"+ rt +
+				"package com.designpattern.proxyoriginal4;"+ rt +
+				"public class TankTimeProxy implements "+ infce.getName()+"{"+ rt +
 						
 					"Moveable t;"+ rt +
 				
@@ -36,18 +48,19 @@ public class Test {
 						"this.t = t;"+ rt +
 					"}"+ rt +
 						
-					"@Override"+ rt +
-					"public void move() {"+ rt +
-						"long start = System.currentTimeMillis();"+ rt +
-						"t.move();"+ rt +
-						"long end = System.currentTimeMillis();"+ rt +
-						"System.out.println(\"time:\"+(end - start));"+ rt +
-					"}"+ rt +
+					methodStr + rt +
+//					"@Override"+ rt +
+//					"public void move() {"+ rt +
+//						"long start = System.currentTimeMillis();"+ rt +
+//						"t.move();"+ rt +
+//						"long end = System.currentTimeMillis();"+ rt +
+//						"System.out.println(\"time:\"+(end - start));"+ rt +
+//					"}"+ rt +
 						
 				"}";
 		System.out.println("path:"+System.getProperty("user.dir"));
 		String fileName = System.getProperty("user.dir")+
-				"/src/com/designpattern/proxyoriginal3/TankTimeProxy.java";
+				"/src/com/designpattern/proxyoriginal4/TankTimeProxy.java";
 		
 		File f = new File(fileName);
 		FileWriter fw = new FileWriter(f);
@@ -75,15 +88,17 @@ public class Test {
 		//我们用特殊的classloader
 		URL[] urls = new URL[]{new URL("file:/"+System.getProperty("user.dir")+"/src")};
 		URLClassLoader ul = new URLClassLoader(urls);
-		Class c = ul.loadClass("com.designpattern.proxyoriginal3.TankTimeProxy");
+		Class c = ul.loadClass("com.designpattern.proxyoriginal4.TankTimeProxy");
 		System.out.println("c = " + c);
-		//c = class com.designpattern.proxyoriginal3.TankTimeProxy表示load成功
+		//c = class com.designpattern.proxyoriginal4.TankTimeProxy表示load成功
 		
 		//反射调用
 		//c.newInstance();//会掉用类里面的参数为空的构造方法
 		Constructor ctr = c.getConstructor(Moveable.class);
-		Moveable m = (Moveable) ctr.newInstance(new Tank());
-		m.move();
+//		Moveable m = (Moveable) ctr.newInstance(new Tank());
+			
+		return null;
+		
 	}
-	
+
 }
