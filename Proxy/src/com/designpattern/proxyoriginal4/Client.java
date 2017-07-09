@@ -5,10 +5,7 @@ import java.io.Serializable;
 public class Client {
 
 	/**
-	 * 实现任意接口的动态代理
-	 * 需要代理的接口有多少个方法，那么我们就要实现多少个方法
-	 * @param args
-	 * @throws Exception 
+	 * 现在有一个很严重的问题是：只能生成时间的代理 不能实现比如说权限这种自定义代理
 	 */
 	public static void main(String[] args) throws Exception {
 //		Moveable moveable = new Tank();
