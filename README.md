@@ -6,3 +6,5 @@
 - [设计模式 装饰者模式 以梦幻西游为背景](http://www.jianshu.com/p/87e6abc39451)
 - [设计模式 外观模式 提供统一的入口](http://www.jianshu.com/p/460d7eb9b3fc)
 - [设计模式 建造者模式 复杂对象的组装与创建](http://www.jianshu.com/p/f384b0063887)
+## Thanks
+- [设计模式的艺术](https://book.douban.com/subject/20493657)
