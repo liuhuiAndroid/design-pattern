@@ -5,3 +5,4 @@
 - [设计模式 代理模式 研究Java动态代理的实现](http://www.jianshu.com/p/0a1cecb54d2a)
 - [设计模式 装饰者模式 以梦幻西游为背景](http://www.jianshu.com/p/87e6abc39451)
 - [设计模式 外观模式 提供统一的入口](http://www.jianshu.com/p/460d7eb9b3fc)
+- [设计模式 建造者模式 复杂对象的组装与创建](http://www.jianshu.com/p/f384b0063887)
