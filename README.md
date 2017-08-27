@@ -7,5 +7,6 @@
 - [设计模式 外观模式 提供统一的入口](http://www.jianshu.com/p/460d7eb9b3fc)
 - [设计模式 建造者模式 复杂对象的组装与创建](http://www.jianshu.com/p/f384b0063887)
 - [设计模式 适配器模式 不兼容结构的协调](http://www.jianshu.com/p/43182d6dcd0e)
+- [设计模式 单例模式 确保对象的唯一性](http://www.jianshu.com/p/971394406d06)
 ## Thanks
 - [设计模式的艺术](https://book.douban.com/subject/20493657)
