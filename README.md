@@ -10,5 +10,6 @@
 - [设计模式 单例模式 确保对象的唯一性](http://www.jianshu.com/p/971394406d06)
 - [设计模式 状态模式 对象状态及其转换](http://www.jianshu.com/p/b1a09a02659f)
 - [设计模式 观察者模式 对象间的联动](http://www.jianshu.com/p/afd7ee545d31)
+- [设计模式 职责链模式 请求的链式处理](http://www.jianshu.com/p/99e151c6d889)
 ## Thanks
 - [设计模式的艺术](https://book.douban.com/subject/20493657)
